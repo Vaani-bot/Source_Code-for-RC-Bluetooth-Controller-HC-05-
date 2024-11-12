@@ -1,0 +1,35 @@
+    digitalWrite(in2, LOW);
+    analogWrite(enA, 255); //// full speed 
+    
+    // Motor B backward
+    digitalWrite(in3, LOW);
+    digitalWrite(in4, HIGH);
+    analogWrite(enB, 255); //// full speed 
+
+    Serial.println("RIGHT OK");
+  
+}
+//OBJECT
+void Stop() {
+    // Stop Motor A
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, LOW);
+    analogWrite(enA, 0);// zero speed 
+    
+    // Stop Motor B
+    digitalWrite(in3, LOW);
+    digitalWrite(in4, LOW);
+    analogWrite(enB, 0);// zero speed 
+
+    Serial.println("STOP");
+    
+}
+//debugging serial monitor & Blutooth module.
+//command CHAR: F= FORWARD B=BACKWARD L =LEFT R =RIGHT
+//2WHEEL DRIVE CAR 
+// documents link: https://drive.google.com/file/d/1tFvYz1-YdtOyvpaBy8UhWbi8CVx8SpCT/view?usp=sharing
+//demo link :https://drive.google.com/file/d/1bVBX1Pej6ML-yBk_AW288MT15HKEdVV6/view?usp=sharing
+
+
+/* ABL COPYRIGHTS & ALL RIGHTS RESERVED -2024 */
+
